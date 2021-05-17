@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  var soul, i, j;
+  soul = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+  i = j = 1;
+  while  (i <= 10) {
+    soul = soul + "<tr>"
+    while (j <= 10) {
+      soul = soul + "<td>" + i * j + "</td>";
+      j++;
+    }
+    soul = soul + "</tr>";
+    j = 1;
+    i++;
+  }
+  soul = soul + "</table>";
+  document.write(soul);
+</script>
+</body>
+</html>
